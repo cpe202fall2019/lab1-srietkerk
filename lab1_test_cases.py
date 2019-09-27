@@ -25,6 +25,7 @@ class TestLab1(unittest.TestCase):
         self.assertEqual(reverse_rec([0, 1, 1]), [1, 1, 0])
         self.assertEqual(reverse_rec([1, 0, 1]), [1, 0, 1])
         self.assertEqual(reverse_rec([-1, -2, 0]), [0, -2, -1])
+        self.assertEqual(reverse_rec([]), [])
             
 
     def test_bin_search(self):

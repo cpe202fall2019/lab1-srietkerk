@@ -19,7 +19,7 @@ def reverse_rec(int_list):   # must use recursion
     If list is None, raises ValueError"""
     if int_list == None: #error for None value
         raise ValueError
-    if len(int_list) == 1: #base case; only one element in list, have reached the end
+    if len(int_list) == 1 or len(int_list) == 0: #base case; only one element in list, have reached the end
         return int_list
     var = reverse_rec(int_list[1:]) #recursive call, slices list until one element in list
     var.append(int_list[0])
